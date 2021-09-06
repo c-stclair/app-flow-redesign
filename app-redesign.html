@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <Title>App ReDesign- SMAD 308</Title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+        <style>
+            
+             img {
+                max-width: 100%;
+                height:auto;
+            }
+            .container {
+                display:grid;
+                grid-template-columns:repeat(12, 1fr);
+                grid-auto-rows: minmax(100px,auto);
+            }
+            header {
+                background-color: black;
+                height: 250px;
+                color: white;
+                padding-top: 15px;
+                padding-left: 20px;
+                grid-column: 1/13;
+            }
+            .objective1 {
+                padding-left: 50px;
+                padding-top: 30px;
+                padding-right: 50px;
+                text-decoration: underline;
+                grid-column: 1/13;
+            }
+            main {
+                padding-left: 50px;
+                padding-right: 50px;
+                grid-column: 1/13;
+                line-height: 150%;
+            }
+            .main-2 {
+                padding-left: 50px;
+                padding-top: 15px;
+                grid-column: 1/13;
+                padding-right: 50px;
+                line-height: 150%;
+            }
+            .objective2 {
+                padding-top: 10px;
+                text-decoration: underline;
+                line-height: 150%;
+            }
+            .box1 {
+                grid-column: 3/6;
+                padding-right: 30px;
+                display: inline;
+            }
+            .box2 {
+                grid-column: 6/9;
+                padding-right: 30px;
+                display: inline;
+            }
+            .box3 {
+                grid-column: 9/13;
+                display: inline;
+            }
+            .box4 {
+                grid-column: 1/6;
+                display: flex;
+                height: 70%;
+                padding-left: 50px;
+            }
+            .box5 {
+                grid-column: 6/13;
+                display: flex;
+                justify-content: right;
+                padding-right: 50px;
+                height: 70%;
+            }
+            .box6 {
+                grid-column: 4/10;
+            }
+            .objective3 {
+                padding-top: 10px;
+                text-decoration: underline;
+                grid-column: 1/13;
+                padding-left: 50px;
+            }
+            .main-3 {
+                grid-column: 1/13;
+                padding-left: 50px;
+                padding-right: 50px;
+                line-height: 200%;
+            }
+            .objective4 {
+                padding-top: 10px;
+                text-decoration: underline;
+                grid-column: 1/13;
+                padding-left: 50px;
+            }
+            .main-4 {
+                grid-column: 1/13;
+                padding-left: 50px;
+            }
+            .box7 {
+                grid-column: 1/4;
+                padding-left: 150px;
+                display: inline;
+            }
+            .box8 {
+                grid-column: 5/13;
+                padding-right: 150px;
+                line-height: 150%;
+            }
+            .main-5 {
+                grid-column: 1/13;
+                padding-left: 50px;
+            }
+            .box9 {
+                grid-column: 1/6;
+                padding-left: 150px;
+                display: inline;
+            }
+            .box10 {
+                grid-column: 6/13;
+                padding-left: 100px;
+                display: inline;
+            }
+            .main-6 {
+                grid-column: 1/13;
+                padding-left: 50px;
+                padding-right: 50px;
+                line-height: 150%;
+            }
+            .objective5 {
+                padding-top: 10px;
+                text-decoration: underline;
+                grid-column: 1/13;
+                padding-left: 50px;
+            }
+            .main-7 {
+                grid-column: 1/13;
+                padding-left: 50px;
+                padding-right: 50px;
+                line-height: 150%;
+            }
+            footer {
+                grid-column: 1/13;
+                background-color: black;
+                color: white;
+                line-height: 170%;
+                padding-top: 10px;
+                padding-left: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        
+            <div class="container">
+            <header>
+                <img src="images/usps-logo.svg" alt="logo">
+             <h1>USPS App ReDesign</h1>
+            <h3>By: Chance St Clair</h3>
+            </header>
+    
+            <div class="objective1">
+            <h2>The Challenge and the Goal</h2>
+            </div>
+        
+        <main>
+            <p>The United States Postal Service is a government service that holds a variety of uses for the average citizen. With many citizens opting to use technology to ease the tasks of everyday life, the USPS adds to that through their very own mobile application. Through the application, users can complete a variety of tasks such as track a package, buy stamps, and find the nearest USPS location. The experience while doing these simple tasks however, is not good user experience. With any given task, the user is redirected to another page, thus leaving the original page. I redesigned the application to create a page that could host the same content, all without leaving the original page/tab. In doing so, the goal in creating this feature is to minimize tab usage in an effort to create a better user experience.
+            </p>
+        
+            <div class="objective2">
+            <h2>Empathize and Discover</h2>
+            </div>
+            <p><b>App Analysis</b></p>
+            <p>The USPS app itself is very simple, but lacks depth. I created a sitemap to walk the user through the path from the home page to locating a USPS location as it is currently.</p>
+        </main>
+        
+            
+            <div class="box1">
+                <img src="images/img-1%201.jpg" alt="homescreen">
+            </div>
+            <div class="box2">
+                <img src="images/img-2%201.jpg" alt="pop-up">
+            </div>
+            <div class="box3">
+                <img src="images/img-3%201.jpg" alt="location-feature">
+            </div>
+                
+            <div class="main-2">
+            <p><b>User Research</b></p> 
+            <p>Design Question- How might we improve the experience of USPS application users in finding a USPS location without leaving the app.</p>
+            <p><i>Top Left Graph</i>- When asked "How Would you Describe your Experience with the USPS app?" Users responded quite negatively, with the largest percentage hitting 44% in the "not good" category. I used this question to gage how users felt toward the app in general, so that I could deep dive into the smaller issues.</p>
+            <p><i>Top Right Graph</i>- I used the question "Have you used apps that have redirected to other features on the same site?" to see how users felt about being redirected. Or in other words, opening a new tab. While my initial hypothesis was in line with the consensus of users, I was overwhelmed by the response. 92% of users said yes to using apps that have redirected them. This response fueled the rest of my questions as it was exactly what I needed as the researcher to get a grasp on how to fix the experience.</p>
+            <p><i>Bottom Graph</i>- When asking the users to "Describe your typical browser tab usage" I wanted to see if the methods that are currently being used in the USPS app, are outdated or not. With 76% of users saying that they only keep the tabs they need open, I obtained all the information I needed to know that minimizing the outside linking is completely necessary. This question is why I decided that there was was fixing to do.
+            </div>
+            
+            <div class="box4">
+                <img src="images/box4.png" alt="graph1">
+            </div>
+            <div class="box5">
+                <img src="images/box5.png" alt="graph2">
+            </div>
+            <div class="box6">
+                <img src="images/box6.png" alt="graph3">
+            </div>
+                
+            <div class="objective3">
+            <h2>Pain Points</h2>
+            </div>
+            <div class="main-3">
+            <ul>
+            <li><b>External Links</b>- Users expressed a large resentment to the app opening to a new page as well as new tabs.</li>
+    
+            <li><b>Navigation</b>- Users had issues getting back to the application after being redirected, the app isn’t clear on what buttons lead to what features</li>
+            
+            <li><b>App crashes</b>- Users experienced app crashes and were forced to close out and re-open the app</li>
+            </ul>
+            </div>
+            <div class="objective4">
+            <h2>ReDesign</h2>
+            </div>
+                
+            <div class="main-4">
+            <p><b>Wireframe/UserFlow</b></p>
+            </div>
+                
+            <div class="box7">
+                <img src="images/wireframe.png" alt="wireframe">
+            </div>
+            <div class="box8">
+            <p>The wireframe of the USPS app is consistent across all features as the app send users to an outside page after the first click.</p> 
+            <p>I included a user flow of the redesign I had in mind when creating the mock ups.</p>
+            <ol>
+            <li>Open app</li>
+            <li>Dashboard- Users are brought to the homescreen where all the apps features are available</li>
+            <li>Locations- Users will click on the locations feature</li>
+            <li>Map Feature- Users will be navigated to a map feature without leaving the app</li> 
+            </ol>
+            </div>
+            
+            <div class="main-5">
+            <p><b>Redsign Mockups</b></p>
+            </div>
+                
+            <div class="box9">
+            <img src="images/mock-1.png" alt="mockup-1">    
+            </div>
+            <div class="box10">
+            <img src="images/mock-2.png" alt="mockup-2"> 
+            </div>
+                
+            <div class="main-6">
+            <p>Through the redesign process, I looked at the data presented in researching 25 users. The biggest question I had as a user of the USPS app was, "Why is this taking me away from the app?" Because of this, I asked questions revolving around this baseline to see if others had the same issues with it.</p> 
+            <p>Users expressed a confiring opinion with the same question I had. Because of this, I redesigned the locations feature to address one of the many tasks that produce the outcome of navigating away from the app.</p>
+            <p>Through my redesign, users will stay in the app at all times, unless of course they choose to leave. By first clicking the locations button on the homescreen, users are then navigated to a new map feature that allows them to imput a zipcode. From there, users have pins drop on the map with the nearest one being highlighted. From there users can click on any pin they desire. Alongside that, users have the option to get directions or to show more options. If users descide that they would like to return to the homescreen, there is a back feature in the top left corner. With this design, it brings ease to the task, while also keeping the users in the app.</p>
+            </div>
+                
+            <div class="objective5">
+            <h2>Conclusion</h2>
+            </div>
+                
+            <div class="main-7">
+            <p>The USPS app is a vital tool for many small and large business alike. The country relies on this being a source available to them. Th app should be user friendly for all.</p>
+            </div>
+                
+            <footer>
+            Chance St Clair<br>
+            App Flow Redesign<br>
+            9/5/21
+            </footer>
+            
+        
+        </div>
+         
+
+    </body>
+</html>
+       
